@@ -46,7 +46,7 @@
                     ? e.classList.add("active-progress")
                     : e.classList.remove("active-progress");
               }),
-              e.addEventListener("click", function (e) {
+              e.addEventListener("click", function (e)  {
                 e.preventDefault(),
                   window.scroll({
                     top: 0,

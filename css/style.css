@@ -1,8 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap");
 
 :root {
-  --primary-color: #77e722;
+  --primary-color: #07cd92;
+
   --gradient-color: #1cb184;
+  
   --bs-primary-rgb: 98, 169, 43;
 }
 spline-viewer {
@@ -47,7 +49,7 @@ spline-viewer {
   --tc-theme-secondary-1: #f1f2f3;
   --tc-theme-secondary-3: #b2a4ab;
   --tc-theme-dark-primary-1: var(--primary-color);
-  --tc-theme-dark-primary-2: #a8ff53;
+  --tc-theme-dark-primary-2: #02de15;
   --tc-theme-dark-primary-3: #fcc6e2;
   --tc-theme-dark-secondary-1: #21212d;
   --tc-theme-dark-secondary-2: #f778ba;
@@ -1032,6 +1034,10 @@ img {
   justify-content: center;
   text-align: center;
   vertical-align: middle;
+}
+.svg-icon-img{
+filter: brightness(0) saturate(100%) invert(73%) sepia(12%) saturate(3633%) hue-rotate(107deg) brightness(86%) contrast(94%);
+width: 40px;
 }
 .icon-xxs {
   height: 1rem;
@@ -6734,70 +6740,7 @@ strong {
     border-bottom-left-radius: 0 !important;
     border-bottom-right-radius: 0 !important;
   }
-  .rounded-bottom-xxl-1 {
-    border-bottom-left-radius: var(--bs-border-radius-sm) !important;
-    border-bottom-right-radius: var(--bs-border-radius-sm) !important;
-  }
-  .rounded-bottom-xxl-2 {
-    border-bottom-left-radius: var(--bs-border-radius) !important;
-    border-bottom-right-radius: var(--bs-border-radius) !important;
-  }
-  .rounded-bottom-xxl-3 {
-    border-bottom-left-radius: var(--bs-border-radius-lg) !important;
-    border-bottom-right-radius: var(--bs-border-radius-lg) !important;
-  }
-  .rounded-bottom-xxl-4 {
-    border-bottom-left-radius: var(--bs-border-radius-xl) !important;
-    border-bottom-right-radius: var(--bs-border-radius-xl) !important;
-  }
-  .rounded-bottom-xxl-5 {
-    border-bottom-left-radius: var(--bs-border-radius-xxl) !important;
-    border-bottom-right-radius: var(--bs-border-radius-xxl) !important;
-  }
-  .rounded-bottom-xxl-circle {
-    border-bottom-left-radius: 50% !important;
-    border-bottom-right-radius: 50% !important;
-  }
-  .rounded-bottom-xxl-pill {
-    border-bottom-left-radius: var(--bs-border-radius-pill) !important;
-    border-bottom-right-radius: var(--bs-border-radius-pill) !important;
-  }
-  .rounded-start-xxl {
-    border-bottom-left-radius: var(--bs-border-radius) !important;
-    border-top-left-radius: var(--bs-border-radius) !important;
-  }
-  .rounded-start-xxl-0 {
-    border-bottom-left-radius: 0 !important;
-    border-top-left-radius: 0 !important;
-  }
-  .rounded-start-xxl-1 {
-    border-bottom-left-radius: var(--bs-border-radius-sm) !important;
-    border-top-left-radius: var(--bs-border-radius-sm) !important;
-  }
-  .rounded-start-xxl-2 {
-    border-bottom-left-radius: var(--bs-border-radius) !important;
-    border-top-left-radius: var(--bs-border-radius) !important;
-  }
-  .rounded-start-xxl-3 {
-    border-bottom-left-radius: var(--bs-border-radius-lg) !important;
-    border-top-left-radius: var(--bs-border-radius-lg) !important;
-  }
-  .rounded-start-xxl-4 {
-    border-bottom-left-radius: var(--bs-border-radius-xl) !important;
-    border-top-left-radius: var(--bs-border-radius-xl) !important;
-  }
-  .rounded-start-xxl-5 {
-    border-bottom-left-radius: var(--bs-border-radius-xxl) !important;
-    border-top-left-radius: var(--bs-border-radius-xxl) !important;
-  }
-  .rounded-start-xxl-circle {
-    border-bottom-left-radius: 50% !important;
-    border-top-left-radius: 50% !important;
-  }
-  .rounded-start-xxl-pill {
-    border-bottom-left-radius: var(--bs-border-radius-pill) !important;
-    border-top-left-radius: var(--bs-border-radius-pill) !important;
-  }
+  
   .w-xxl-25 {
     width: 25% !important;
   }
@@ -14036,6 +13979,9 @@ strong {
   border: 1px solid var(--tc-border-1);
   transition: all 0.3s ease;
 }
+.section-hero-2 .brand-logo  svg{
+width: 45px;
+}
 .section-hero-2 .brand-logo:hover {
   background-color: #242424;
   border: none;
@@ -14174,9 +14120,7 @@ strong {
   fill: var(--primary-color);
   transition: all 0.3s ease;
 }
-.section-experience .technology:hover {
-  background-color: var(--tc-border-1) !important;
-}
+
 .section-projects-2 .link-hover {
   transition: all 0.2s ease;
 }
