@@ -11911,7 +11911,7 @@ background-position: lef;
 
  
   .fs-50 {
-    font-size: 40px !important ;
+    font-size: 30px !important ;
 
     letter-spacing: 1px;
   }
@@ -11920,6 +11920,7 @@ background-position: lef;
   }
   body.home-page-2 p {
     letter-spacing: 1px;
+    
   }
   .section-hero-descriptio {
     letter-spacing: 5px;
