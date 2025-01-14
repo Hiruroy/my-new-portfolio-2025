@@ -11540,7 +11540,7 @@ strong {
     padding: 20px;
   }
   .section-service-2 .card-servies-2 {
-    padding: 70px 30px 30px !important;
+    padding: 20px 10px  !important;
   }
 }
 .section-footer .navigation a {
@@ -11898,19 +11898,7 @@ background-position: lef;
 [data-bs-theme="dark"] .section-newsletter-3 .bg-4 {
   background-color: var(--tc-neutral-200) !important;
 }
-[data-bs-theme="dark"]
-  .mobile-header-wrapper-style
-  .mobile-header-wrapper-inner
-  .mobile-header-content-area
-  .mobile-menu-wrap
-  nav
-  .mobile-menu
-  li.has-children
-  .menu-expand
-  i {
-  background: url(../images/template/icons/arrow-right-big-dark.svg) no-repeat
-    50%;
-}
+
 /* ================my code==================== */
 /* ================my code==================== */
 /* ================my code==================== */
@@ -11920,6 +11908,8 @@ background-position: lef;
 /* ================my code==================== */
 /* ================my code==================== */
 @media (max-width: 768px) {
+
+ 
   .fs-50 {
     font-size: 40px !important ;
 
@@ -11951,6 +11941,11 @@ background-position: lef;
   .procect {
     width: 42% !important;
   }
+  .imgscroll {
+  height: 250px;
+
+
+}
 
   /* /==================== */
   /* /==================== */

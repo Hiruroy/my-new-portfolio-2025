@@ -39,26 +39,6 @@
                   });
                 });
             },
-            t = function () {
-              var e = $(".odometer");
-              0 !== e.length &&
-                e.appear(function () {
-                  $(".odometer").each(function () {
-                    var e = $(this).data("count");
-                    $(this).html(e);
-                  });
-                });
-            },
-            r = function () {
-              $("[data-background]").each(function () {
-                $(this).css({
-                  "background-image":
-                    "url(" + $(this).attr("data-background") + ")",
-                  "background-size": "cover",
-                  "background-repeat": "no-repeat",
-                });
-              });
-            },
             o = function () {
               $(".masonry-active").imagesLoaded(function () {
                 var e = ".masonry-active",

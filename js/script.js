@@ -46,7 +46,7 @@
                     ? e.classList.add("active-progress")
                     : e.classList.remove("active-progress");
               }),
-              e.addEventListener("click", function (e)  {
+              e.addEventListener("click", function (e) {
                 e.preventDefault(),
                   window.scroll({
                     top: 0,
@@ -56,112 +56,6 @@
               });
           }
         })(),
-        e(".menu-tigger").on("click", function () {
-          return (
-            e(".offCanvas__info, .offCanvas__overly").addClass("active"), !1
-          );
-        }),
-        e(".menu-close, .offCanvas__overly").on("click", function () {
-          e(".offCanvas__info, .offCanvas__overly").removeClass("active");
-        }),
-        AOS.init({
-          duration: 1e3,
-          mirror: !0,
-          once: !0,
-          disable: "mobile",
-        }),
-        e(".popup-image").magnificPopup({
-          type: "image",
-          gallery: {
-            enabled: !0,
-          },
-        }),
-        e(".popup-video").magnificPopup({
-          type: "iframe",
-        }),
-        new WOW({
-          boxClass: "wow",
-          animateClass: "animated",
-          offset: 0,
-          mobile: !1,
-          live: !0,
-        }).init(),
-        e("input")
-          .focus(function () {
-            e(this).closest("div.input-group").addClass("focus");
-          })
-          .blur(function () {
-            e(this).closest("div.input-group").removeClass("focus");
-          }),
-        e("textarea")
-          .focus(function () {
-            e(this).closest("div.input-group").addClass("focus");
-          })
-          .blur(function () {
-            e(this).closest("div.input-group").removeClass("focus");
-          }),
-        e("select")
-          .focus(function () {
-            e(this).closest("div.input-group").addClass("focus");
-          })
-          .blur(function () {
-            e(this).closest("div.input-group").removeClass("focus");
-          }),
-        (function () {
-          var t = e(".burger-icon"),
-            s =
-              (e(".burger-icon-2"),
-              e(".close-canvas"),
-              e(".mobile-menu-close")),
-            n = e(".mobile-header-active"),
-            i = (e(".sidebar-canvas-wrapper"), e("body"));
-          i.prepend('<div class="body-overlay-1"></div>'),
-            t.on("click", function (e) {
-              t.toggleClass("burger-close"),
-                e.preventDefault(),
-                n.toggleClass("sidebar-visible"),
-                i.toggleClass("mobile-menu-active");
-            }),
-            s.on("click", function () {
-              n.removeClass("sidebar-visible"),
-                i.removeClass("mobile-menu-active");
-            });
-          var o = e(".mobile-menu"),
-            l = o.find(".sub-menu");
-          l
-            .parent()
-            .prepend(
-              '<span class="menu-expand"><i class="arrow-small-down"></i></span>'
-            ),
-            l.slideUp(),
-            o.on("click", "li a, li .menu-expand", function (t) {
-              var s = e(this);
-              s
-                .parent()
-                .attr("class")
-                .match(
-                  /\b(menu-item-has-children|has-children|has-sub-menu)\b/
-                ) &&
-                ("#" === s.attr("href") || s.hasClass("menu-expand")) &&
-                (t.preventDefault(),
-                s.siblings("ul:visible").length
-                  ? (s.parent("li").removeClass("active"),
-                    s.siblings("ul").slideUp())
-                  : (s.parent("li").addClass("active"),
-                    s
-                      .closest("li")
-                      .siblings("li")
-                      .removeClass("active")
-                      .find("li")
-                      .removeClass("active"),
-                    s.closest("li").siblings("li").find("ul:visible").slideUp(),
-                    s.siblings("ul").slideDown()));
-            });
-        })(),
-        (t = aat),
-        (s = t.ScrollObserver),
-        (n = t.valueAtPercentage),
-        (i = document.querySelector(".cards")),
         (o = document.querySelectorAll(".card-custom")),
         i &&
           o.length &&
