@@ -11699,22 +11699,50 @@ strong {
 .section-service-2 .card-servies-2 {
   background-color: var(--tc-bg-3);
   border: 1px solid var(--tc-border-1);
-  padding: 50px 42px 42px;
+  padding: 50px 42px 42px;position: relative;
 }
-.section-service-2 .card-servies-2 svg path {
-  fill: var(--tc-neutral-0);
-  transition: all 0.3s ease;
-}
-.section-service-2 .card-servies-2:hover svg path {
-  fill: var(--primary-color);
-  transition: all 0.3s ease;
+@property --angle{
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
 }
 
+.section-service-2 .card-servies-2::after ,.card-servies-2::before{
+  content: '';
+  position: absolute;
+  width: 101%;
+  height: 102%;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  padding: 3px;
+  border-radius: 5px;
+  
+ /* animation: 5s spinn  infinite linear; */
+  z-index: -1;
+  
+}
+.card-servies-2::before{
+  filter: blur(1.5rem);
+  opacity: 0.2;
+}
+@keyframes spinn{
+  from{
+    --angle: 0deg;
+  }
+  to{
+    --angle: 360deg;
+  }
+} .card-servies-2:hover::after,
+ .card-servies-2:hover::before {
+    background: conic-gradient(from var(--angle), transparent 35%, #5efcad,var(--primary-color),transparent ,transparent,transparent,transparent,transparent,transparent,transparent);
+  animation: 5s spinn infinite linear;
+}
 .section-projects-2 .link-hover {
   transition: all 0.2s ease;
 }
 .section-projects-2 .link-hover svg path {
-  fill: var(--tc-neutral-300) !important;
+  fill: var(--primary-color) !important;
   transition: all 0.2s ease;
 }
 .section-projects-2 .link-hover:hover {
@@ -11811,7 +11839,7 @@ strong {
   --tc-neutral-700: var(--tc-neutral-dark-700);
   --tc-neutral-800: var(--tc-neutral-dark-800);
   --tc-neutral-900: var(--tc-neutral-dark-900);
-  --tc-neutral-1000: var(--tc-neutral-dark-1000);
+  --tc-neutral-1000: var(--tc-neutral-dark-1000 );
   --tc-system-success: var(--tc-system-dark-success);
   --tc-system-info: var(--tc-system-dark-info);
   --tc-system-warning: var(--tc-system-dark-warning);
