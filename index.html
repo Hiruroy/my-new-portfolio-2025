@@ -1132,7 +1132,7 @@
                 </div>
                 <h3>My Recent Works</h3>
                 <div class="position-relative">
-                  <div class="swiper slider-work pb-3 position-relative">
+                  <div class="swiper slider-work pb-8 position-relative">
                     <div class="swiper-wrapper">
                       <!-- =======slider ======== -->
                       <div class="swiper-slide">
@@ -1176,7 +1176,7 @@
                                       My Role
                                     </p>
                                     <p class="text-300 mb-0 text-end">
-                                      Ui/Ux, Content, Frontend Development
+                                      Ui/Ux, Frontend Development
                                     </p>
                                   </div>
                                 </li>
@@ -1343,7 +1343,7 @@
                                       My Role
                                     </p>
                                     <p class="text-300 mb-0 text-end">
-                                      Ui/Ux, Content, Frontend Development
+                                      Ui/Ux, Frontend Development
                                     </p>
                                   </div>
                                 </li>
@@ -1428,7 +1428,7 @@
                                       My Role
                                     </p>
                                     <p class="text-300 mb-0 text-end">
-                                      Ui/Ux, Content, Frontend Development
+                                      Ui/Ux, Frontend Development
                                     </p>
                                   </div>
                                 </li>
@@ -1513,7 +1513,7 @@
                                       My Role
                                     </p>
                                     <p class="text-300 mb-0 text-end">
-                                      Ui/Ux, Content, Frontend Development
+                                      Ui/Ux, Frontend Development
                                     </p>
                                   </div>
                                 </li>
@@ -1598,7 +1598,7 @@
                                       My Role
                                     </p>
                                     <p class="text-300 mb-0 text-end">
-                                      Ui/Ux, Content, Frontend Development
+                                      Ui/Ux, Frontend Development
                                     </p>
                                   </div>
                                 </li>
@@ -1685,7 +1685,7 @@
                                       My Role
                                     </p>
                                     <p class="text-300 mb-0 text-end">
-                                      Ui/Ux, Content, Frontend Development
+                                      Ui/Ux, Frontend Development
                                     </p>
                                   </div>
                                 </li>
@@ -1770,7 +1770,7 @@
                                       My Role
                                     </p>
                                     <p class="text-300 mb-0 text-end">
-                                      Ui/Ux, Content, Frontend Development
+                                      Ui/Ux, Frontend Development
                                     </p>
                                   </div>
                                 </li>
@@ -1857,7 +1857,7 @@
                                       My Role
                                     </p>
                                     <p class="text-300 mb-0 text-end">
-                                      Ui/Ux, Content, Frontend Development
+                                      Ui/Ux, Frontend Development
                                     </p>
                                   </div>
                                 </li>
@@ -1908,7 +1908,7 @@
                     ></span>
                   </div>
                   <div
-                    class="position-absolute bottom-0 end-0 gap-2 pb-7 pe-5 d-none d-md-flex"
+                    class="position-absolute bottom-0 end-0 gap-2 pb-md-10 pe-5 d-none d-md-flex"
                   >
                     <div
                       class="swiper-button-prev end-0 shadow position-relative"
@@ -1951,6 +1951,7 @@
                       </svg>
                     </div>
                   </div>
+                    <div class="swiper-pagination"></div>
                 </div>
               </div>
               <img
@@ -3014,8 +3015,13 @@
     <script src="js/script.js"></script>
     <script>
       var swiper = new Swiper(".slider-work", {
-        <!-- autoplay: true, -->
+    
         slidesPerView: 1,
+           pagination: {
+        el: ".swiper-pagination",
+         clickable: true,
+         
+      },
         navigation: {
           nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prev",
