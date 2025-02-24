@@ -34,6 +34,10 @@ transform: translateY(30px) !important;
 color: #1cb184 !important;
 
 }
+  .codeimg {
+    /* background-color: red; */
+    transform: translateY(-54px) !important;
+  }
 .procect {
   width: 32% !important;
   height: 40px !important;
